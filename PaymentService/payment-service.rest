@@ -1,0 +1,13 @@
+
+### Make Payment
+POST http://localhost:8083/api/payments
+Content-Type: application/json
+
+{
+  "orderId": 1,
+  "amount": 1997.98,
+  "paymentMethod": "CREDIT_CARD"
+}
+
+### Get Payment by Order ID
+GET http://localhost:8083/api/payments/order/1

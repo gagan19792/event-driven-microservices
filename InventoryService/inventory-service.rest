@@ -1,0 +1,12 @@
+
+### Get Inventory by Product ID
+GET http://localhost:8081/api/inventory/1
+
+### Update Inventory
+POST http://localhost:8081/api/inventory
+Content-Type: application/json
+
+{
+  "productId": 1,
+  "quantity": 98
+}

@@ -1,0 +1,19 @@
+### Place Order (Triggers order.created)
+POST http://localhost:8082/api/orders
+Content-Type: application/json
+
+{
+  "customerId": "test_user",
+  "items": [
+    {
+      "productId": 1,
+      "quantity": 2,
+      "price": 799.99
+    },
+    {
+      "productId": 3,
+      "quantity": 1,
+      "price": 398.00
+    }
+  ]
+}

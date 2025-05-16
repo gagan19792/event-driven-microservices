@@ -1,0 +1,19 @@
+/ -- curl commands --
+# Create a new product
+curl -X POST http://localhost:8080/api/products \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "MacBook Air",
+    "description": "M2 Chip, 8GB RAM",
+    "price": 999.99,
+    "category": "Electronics"
+}'
+
+# Get all products
+  curl http://localhost:8080/api/products
+
+# Get a specific product
+curl http://localhost:8080/api/products/1
+
+# Delete a product
+curl -X DELETE http://localhost:8080/api/products/1
